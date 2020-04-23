@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ReadOnlyStudentFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_title_nama"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:gravity="start"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/title_nama"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_nama_readOnly"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_nama_readOnly"
+                android:layout_marginLeft="16dp" />
+
+            <TextView
+                android:id="@+id/tv_title_nim"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:gravity="start"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/title_nim"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_nim_readOnly"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_nim_readOnly"
+                android:layout_marginLeft="16dp" />
+
+            <TextView
+                android:id="@+id/tv_title_kelas"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:gravity="start"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/title_kelas"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_kelas_readOnly"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_kelas_readOnly"
+                android:layout_marginLeft="16dp" />
+
+            <TextView
+                android:id="@+id/tv_nama_readOnly"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:hint="@string/nama"
+                android:importantForAutofill="no"
+                android:inputType="none"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv_title_nama"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginRight="16dp" />
+
+            <TextView
+                android:id="@+id/tv_nim_readOnly"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:hint="@string/nim"
+                android:importantForAutofill="no"
+                android:inputType="none"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv_title_nim"
+                app:layout_constraintTop_toBottomOf="@+id/tv_nama_readOnly"
+                android:layout_marginRight="16dp" />
+
+            <TextView
+                android:id="@+id/tv_kelas_readOnly"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:hint="@string/kelas"
+                android:importantForAutofill="no"
+                android:inputType="none"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv_title_kelas"
+                app:layout_constraintTop_toBottomOf="@+id/tv_nim_readOnly"
+                android:layout_marginRight="16dp" />
+
+            <TextView
+                android:id="@+id/tv_nilai_t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/nilai_t"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_nilai_t_readOnly"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_nilai_t_readOnly"
+                android:layout_marginLeft="16dp" />
+
+            <TextView
+                android:id="@+id/tv_nilai_a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/nilai_a1"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_nilai_a1_readOnly"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_nilai_a1_readOnly"
+                android:layout_marginLeft="16dp" />
+
+            <TextView
+                android:id="@+id/tv_nilai_a2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/nilai_a2"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_nilai_a2_readOnly"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_nilai_a2_readOnly"
+                android:layout_marginLeft="16dp" />
+
+            <TextView
+                android:id="@+id/tv_nilai_a3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/nilai_a3"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_nilai_a3_readOnly"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_nilai_a3_readOnly"
+                android:layout_marginLeft="16dp" />
+
+            <TextView
+                android:id="@+id/tv_nilai_p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/nilai_p"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_nilai_p_readOnly"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_nilai_p_readOnly"
+                android:layout_marginLeft="16dp" />
+
+            <TextView
+                android:id="@+id/tv_presensi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/presensi"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_presensi_readOnly"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_presensi_readOnly"
+                android:layout_marginLeft="16dp" />
+
+            <TextView
+                android:id="@+id/tv_nilai_t_readOnly"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:autofillHints="0"
+                android:ems="10"
+                android:hint="@string/zero"
+                android:inputType="none"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/tv_nilai_t"
+                app:layout_constraintTop_toBottomOf="@+id/tv_kelas_readOnly"
+                android:gravity="end" />
+
+            <TextView
+                android:id="@+id/tv_nilai_a1_readOnly"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:autofillHints="0"
+                android:ems="10"
+                android:hint="@string/zero"
+                android:inputType="none"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/tv_nilai_a1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_nilai_t_readOnly"
+                android:layout_marginRight="16dp"
+                android:gravity="end" />
+
+            <TextView
+                android:id="@+id/tv_nilai_a2_readOnly"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:autofillHints="0"
+                android:ems="10"
+                android:hint="@string/zero"
+                android:inputType="none"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/tv_nilai_a2"
+                app:layout_constraintTop_toBottomOf="@+id/tv_nilai_a1_readOnly"
+                android:layout_marginRight="16dp"
+                android:gravity="end" />
+
+            <TextView
+                android:id="@+id/tv_nilai_a3_readOnly"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:autofillHints="0"
+                android:ems="10"
+                android:hint="@string/zero"
+                android:inputType="none"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/tv_nilai_a3"
+                app:layout_constraintTop_toBottomOf="@+id/tv_nilai_a2_readOnly"
+                android:layout_marginRight="16dp"
+                android:gravity="end" />
+
+            <TextView
+                android:id="@+id/tv_nilai_p_readOnly"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:autofillHints="0"
+                android:ems="10"
+                android:hint="@string/zero"
+                android:inputType="none"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/tv_nilai_p"
+                app:layout_constraintTop_toBottomOf="@+id/tv_nilai_a3_readOnly"
+                android:layout_marginRight="16dp"
+                android:gravity="end" />
+
+            <TextView
+                android:id="@+id/tv_presensi_readOnly"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:autofillHints="0"
+                android:ems="10"
+                android:hint="@string/zero"
+                android:inputType="none"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/tv_presensi"
+                app:layout_constraintTop_toBottomOf="@+id/tv_nilai_p_readOnly"
+                android:layout_marginRight="16dp"
+                android:gravity="end"
+                android:layout_gravity="end" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_presensi_readOnly" />
+
+            <View
+                android:id="@+id/divider_v"
+                android:layout_width="1dp"
+                android:layout_height="144dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+            <TextView
+                android:id="@+id/tv_judul_nilai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/nilai_akhir"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/divider_v"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/divider_v" />
+
+            <TextView
+                android:id="@+id/tv_judul_indeks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/indeks_akhir"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/divider_v"
+                app:layout_constraintTop_toTopOf="@+id/divider_v" />
+
+            <TextView
+                android:id="@+id/tv_nilai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="64sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/divider_v"
+                app:layout_constraintEnd_toStartOf="@+id/divider_v"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_judul_nilai"
+                app:layout_constraintVertical_bias="0.0"
+                tools:text="N/A" />
+
+            <TextView
+                android:id="@+id/tv_indeks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="64sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/divider_v"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/divider_v"
+                app:layout_constraintTop_toBottomOf="@+id/tv_judul_indeks"
+                app:layout_constraintVertical_bias="0.0"
+                tools:text="N/A" />
+
+            <View
+                android:id="@+id/divider_h"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider_v" />
+
+            <TextView
+                android:id="@+id/tv_judul_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/status_kelulusan"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider_v" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:textSize="64sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_judul_status"
+                app:layout_constraintVertical_bias="0.0"
+                tools:text="N/A" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

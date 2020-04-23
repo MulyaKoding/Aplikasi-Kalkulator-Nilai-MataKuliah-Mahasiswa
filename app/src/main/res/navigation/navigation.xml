@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="org.d3if4034.kalkulator_nilai_matakuliah.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="org.d3if4034.kalkulator_nilai_matakuliah.HomeFragment2"
+        android:label="Daftar Mahasiswa/i"
+        tools:layout="@layout/fragment_home2">
+        <action
+            android:id="@+id/action_homeFragment2_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_addStudentFragment"
+            app:destination="@id/addStudentFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_editStudentFragment"
+            app:destination="@id/editStudentFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_readOnlyStudentFragment"
+            app:destination="@id/readOnlyStudentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addStudentFragment"
+        android:name="org.d3if4034.kalkulator_nilai_matakuliah.AddStudentFragment"
+        android:label="Input Nilai"
+        tools:layout="@layout/fragment_add_student">
+        <action
+            android:id="@+id/action_addStudentFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+        <action
+            android:id="@+id/action_addStudentFragment_to_sangatBaikFragment2"
+            app:destination="@id/sangatBaikFragment" />
+        <action
+            android:id="@+id/action_addStudentFragment_to_baikFragment"
+            app:destination="@id/baikFragment" />
+        <action
+            android:id="@+id/action_addStudentFragment_to_cukupBaikFragment"
+            app:destination="@id/cukupBaikFragment" />
+        <action
+            android:id="@+id/action_addStudentFragment_to_cukupFragment"
+            app:destination="@id/cukupFragment" />
+        <action
+            android:id="@+id/action_addStudentFragment_to_kurangBaikFragment"
+            app:destination="@id/kurangBaikFragment" />
+        <action
+            android:id="@+id/action_addStudentFragment_to_mengulangFragment"
+            app:destination="@id/mengulangFragment" />
+        <action
+            android:id="@+id/action_addStudentFragment_to_tidakBaikFragment"
+            app:destination="@id/tidakBaikFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editStudentFragment"
+        android:name="org.d3if4034.kalkulator_nilai_matakuliah.EditStudentFragment"
+        android:label="Edit Nilai"
+        tools:layout="@layout/fragment_edit_student">
+        <action
+            android:id="@+id/action_editStudentFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+        <action
+            android:id="@+id/action_editStudentFragment_to_sangatBaikFragment"
+            app:destination="@id/sangatBaikFragment" />
+        <action
+            android:id="@+id/action_editStudentFragment_to_baikFragment"
+            app:destination="@id/baikFragment" />
+        <action
+            android:id="@+id/action_editStudentFragment_to_cukupBaikFragment"
+            app:destination="@id/cukupBaikFragment" />
+        <action
+            android:id="@+id/action_editStudentFragment_to_cukupFragment"
+            app:destination="@id/cukupFragment" />
+        <action
+            android:id="@+id/action_editStudentFragment_to_kurangBaikFragment"
+            app:destination="@id/kurangBaikFragment" />
+        <action
+            android:id="@+id/action_editStudentFragment_to_kurangBaikFragment2"
+            app:destination="@id/kurangBaikFragment" />
+        <action
+            android:id="@+id/action_editStudentFragment_to_tidakBaikFragment"
+            app:destination="@id/tidakBaikFragment" />
+        <action
+            android:id="@+id/action_editStudentFragment_to_mengulangFragment"
+            app:destination="@id/mengulangFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/readOnlyStudentFragment"
+        android:name="org.d3if4034.kalkulator_nilai_matakuliah.ReadOnlyStudentFragment"
+        android:label="Lihat Nilai"
+        tools:layout="@layout/fragment_read_only_student">
+        <action
+            android:id="@+id/action_readOnlyStudentFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/sangatBaikFragment"
+        android:name="org.d3if4034.kalkulator_nilai_matakuliah.SangatBaikFragment"
+        android:label="Sangat Baik"
+        tools:layout="@layout/fragment_sangat_baik">
+        <action
+            android:id="@+id/action_sangatBaikFragment_to_addStudentFragment2"
+            app:destination="@id/addStudentFragment" />
+        <action
+            android:id="@+id/action_sangatBaikFragment_to_editStudentFragment"
+            app:destination="@id/editStudentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/baikFragment"
+        android:name="org.d3if4034.kalkulator_nilai_matakuliah.BaikFragment"
+        android:label="Baik"
+        tools:layout="@layout/fragment_baik">
+        <action
+            android:id="@+id/action_baikFragment_to_addStudentFragment"
+            app:destination="@id/addStudentFragment" />
+        <action
+            android:id="@+id/action_baikFragment_to_editStudentFragment"
+            app:destination="@id/editStudentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cukupBaikFragment"
+        android:name="org.d3if4034.kalkulator_nilai_matakuliah.CukupBaikFragment"
+        android:label="Cukup Baik"
+        tools:layout="@layout/fragment_cukup_baik">
+        <action
+            android:id="@+id/action_cukupBaikFragment_to_addStudentFragment"
+            app:destination="@id/addStudentFragment" />
+        <action
+            android:id="@+id/action_cukupBaikFragment_to_editStudentFragment"
+            app:destination="@id/editStudentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cukupFragment"
+        android:name="org.d3if4034.kalkulator_nilai_matakuliah.CukupFragment"
+        android:label="Cukup"
+        tools:layout="@layout/fragment_cukup">
+        <action
+            android:id="@+id/action_cukupFragment_to_addStudentFragment"
+            app:destination="@id/addStudentFragment" />
+        <action
+            android:id="@+id/action_cukupFragment_to_editStudentFragment"
+            app:destination="@id/editStudentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kurangBaikFragment"
+        android:name="org.d3if4034.kalkulator_nilai_matakuliah.KurangBaikFragment"
+        android:label="Kurang Baik"
+        tools:layout="@layout/fragment_kurang_baik">
+        <action
+            android:id="@+id/action_kurangBaikFragment_to_addStudentFragment"
+            app:destination="@id/addStudentFragment" />
+        <action
+            android:id="@+id/action_kurangBaikFragment_to_editStudentFragment"
+            app:destination="@id/editStudentFragment" />
+        <action
+            android:id="@+id/action_kurangBaikFragment_to_editStudentFragment2"
+            app:destination="@id/editStudentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mengulangFragment"
+        android:name="org.d3if4034.kalkulator_nilai_matakuliah.MengulangFragment"
+        android:label="Mengulang"
+        tools:layout="@layout/fragment_mengulang">
+        <action
+            android:id="@+id/action_mengulangFragment_to_addStudentFragment"
+            app:destination="@id/addStudentFragment" />
+        <action
+            android:id="@+id/action_mengulangFragment_to_editStudentFragment"
+            app:destination="@id/editStudentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tidakBaikFragment"
+        android:name="org.d3if4034.kalkulator_nilai_matakuliah.TidakBaikFragment"
+        android:label="Tidak Baik"
+        tools:layout="@layout/fragment_tidak_baik">
+        <action
+            android:id="@+id/action_tidakBaikFragment_to_addStudentFragment"
+            app:destination="@id/addStudentFragment" />
+        <action
+            android:id="@+id/action_tidakBaikFragment_to_editStudentFragment"
+            app:destination="@id/editStudentFragment" />
+    </fragment>
+</navigation>

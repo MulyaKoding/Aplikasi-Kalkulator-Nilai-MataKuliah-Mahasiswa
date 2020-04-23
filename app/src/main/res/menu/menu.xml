@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/urut_nama"
+        android:title="@string/urutkan_nama" />
+    <item
+        android:id="@+id/urut_nim"
+        android:title="@string/urutkan_nim" />
+    <item
+        android:id="@+id/urut_nilai"
+        android:title="@string/urutkan_nilai" />
+    <item
+        android:id="@+id/daftar_lulus"
+        android:title="@string/daftar_lulus" />
+    <item
+        android:id="@+id/sepuluh_besar"
+        android:title="@string/sepuluh_besar" />
+    <item
+        android:id="@+id/hapus_semua"
+        android:title="@string/hapus_semua_data" />
+</menu>

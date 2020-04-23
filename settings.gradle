@@ -1,0 +1,2 @@
+rootProject.name='Kalkulator-Nilai-MataKuliah'
+include ':app'
