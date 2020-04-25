@@ -59,6 +59,7 @@
                     android:id="@+id/tv_deskripsi"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/selamat_anda_memiliiki"
                     android:text="@string/selamat_anda_memiliki"
                     android:textColor="@color/colorText"
                     android:textSize="16sp" />
@@ -68,6 +69,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/nilai_baik"
+                    android:contentDescription="@string/nilai_baikk"
                     android:textColor="@color/colorText"
                     android:textSize="16sp" />
 
@@ -83,6 +85,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginRight="16dp"
                 android:text="@string/label_for_you"
+                android:contentDescription="Untuk Anda"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -108,7 +111,8 @@
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginBottom="8dp"
-            android:text="@string/mantap_nilai_indeks_andra_termasuk_nilai_yang_baiik_pertahankan_dan_tingkatkan_belajar_yang_baik"
+            android:contentDescription=""
+            android:text="@string/mantap_nilai_indeks_anda_termasuk_nilai_yang_baiik_pertahankan_dan_tingkatkan_belajar_yang_baik"
             android:textColor="@color/colorTextHeader"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"

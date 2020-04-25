@@ -55,11 +55,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/selamat_anda_memiliki"
+                    android:contentDescription="Selamat Anda Memiliki"
                     android:textColor="@color/colorText"
                     android:textSize="16sp" />
 
                 <TextView
                     android:id="@+id/tv_kurangbaik"
+                    android:contentDescription="Nilai Kurang Baik"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/nilai_kurangbaik"
@@ -78,6 +80,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginRight="16dp"
                 android:text="@string/label_for_you"
+                android:contentDescription="Untuk Anda"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -105,7 +108,9 @@
             android:layout_marginBottom="8dp"
             android:text="@string/maaf_sekali_anda_nampaknya_nilainya_kurang_baik_dari_standar_maka_anda_harus_lebih_sering_tingkatkan_waktu_belajar_anda"
             android:textColor="@color/colorTextHeader"
+            android:contentDescription="maaf sekali anda nampaknya nilainya kurang baik dari standar maka anda harus lebih sering tingkatkan waktu belajar anda"
             android:textSize="16sp"
+
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.75"

@@ -22,6 +22,7 @@
                 android:padding="2dp"
                 android:textColor="@android:color/black"
                 android:textSize="20sp"
+                android:contentDescription="Nama Mahasiswa"
                 android:textStyle="bold"
                 tools:text="Nama" />
 
@@ -30,6 +31,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="2dp"
+                android:contentDescription="Nim dan Kelas"
                 android:textColor="#474747"
                 android:textSize="16sp"
                 tools:text="NIM - Kelas" />
@@ -39,6 +41,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="2dp"
+                android:contentDescription="Nilai Indeks Akhir"
                 android:textColor="#474747"
                 android:textSize="12sp"
                 tools:text="Status [Indeks (Nilai)]" />

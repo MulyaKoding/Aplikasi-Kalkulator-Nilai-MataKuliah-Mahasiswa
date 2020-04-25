@@ -55,6 +55,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/selamat_anda_memiliki"
+                    android:contentDescription="Selamat anda memiliki"
                     android:textColor="@color/colorText"
                     android:textSize="16sp" />
 
@@ -62,6 +63,7 @@
                     android:id="@+id/tv_cukupBaik"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:contentDescription="Nilai Cukup Baik"
                     android:text="@string/nilai_cukupbaik"
                     android:textColor="@color/colorText"
                     android:textSize="16sp" />
@@ -106,6 +108,7 @@
             android:text="@string/dalam_prestasi_anda_cukup_baik_tingkatan_latihan_dan_sering_implementasikan_materi_yang_diajarkan_agar_bisa_mendapatkan_nilai_yang_sangat_baik"
             android:textColor="@color/colorTextHeader"
             android:textSize="16sp"
+            android:contentDescription="@string/dalam_prestasi_anda_cukup_baik_tingkatan_latihan_dan_sering_implementasikan_materi_yang_diajarkan_agar_bisa_mendapatkan_nilai_yang_sangat_baikk"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.67"

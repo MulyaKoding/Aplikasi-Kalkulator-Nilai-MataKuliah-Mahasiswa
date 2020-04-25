@@ -56,6 +56,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/selamat_anda_memiliki"
                     android:textColor="@color/colorText"
+                    android:contentDescription="Selamat anda memiliki"
                     android:textSize="16sp" />
 
                 <TextView
@@ -63,6 +64,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/nilai_cukup"
+                    android:contentDescription="@string/nilai_cukupp"
                     android:textColor="@color/colorText"
                     android:textSize="16sp" />
 
@@ -78,6 +80,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginRight="16dp"
                 android:text="@string/label_for_you"
+                android:contentDescription="Untuk Anda"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -105,6 +108,7 @@
             android:layout_marginBottom="8dp"
             android:text="@string/nilai_indeks_anda_sudah_cukup_atau_pas_pasan_namun_anda_bisa_kembangkan_dengan_rajin_melakukan_latihan_dan_belajar_agara_nilai_nya_memuaskan"
             android:textColor="@color/colorTextHeader"
+            android:contentDescription="@string/nilai_indeks_anda_sudah_cukup_atau_pas_pasan_namun_anda_bisa_kembangkan_dengan_rajin_melakukan_latihan_dan_belajar_agar_nilai_nya_memuaskan"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

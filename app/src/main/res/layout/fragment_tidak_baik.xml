@@ -54,6 +54,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/selamat_anda_memiliki"
+                    android:contentDescription="Selamat Anda Memiliki"
                     android:textColor="@color/colorText"
                     android:textSize="16sp" />
 
@@ -63,6 +64,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/nilai_tidakbaik"
                     android:textColor="@color/colorText"
+                    android:contentDescription="Nilai Tidak Baik"
                     android:textSize="16sp" />
 
 
@@ -76,6 +78,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginRight="16dp"
+                android:contentDescription="Untuk Anda"
                 android:text="@string/label_for_you"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -104,6 +107,7 @@
             android:layout_marginBottom="8dp"
             android:text="@string/indeks_anda_nampaknya_kurang_memuaskan_dan_harus_mengulang_di_semester_depan_untuk_kedepanya_anda_harus_lebih_giat_belajar_lagi"
             android:textColor="@color/colorTextHeader"
+            android:contentDescription="indeks anda nampaknya kurang memuaskan dan harus mengulang di semester depan untuk kedepanya anda harus lebih giat belajar lagi"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

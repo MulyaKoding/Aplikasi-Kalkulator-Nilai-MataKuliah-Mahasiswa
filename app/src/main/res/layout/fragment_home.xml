@@ -68,6 +68,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/selamat_datang"
+                android:contentDescription="@string/selamat_datangg"
                 android:textColor="@color/colorText"
                 android:textSize="16sp" />
 
@@ -76,6 +77,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/di_aplikasi_perhitungan_nilai_matakuliah"
+                android:contentDescription="@string/di_aplikasi_perhitungan_nilai_mata_kuliah"
                 android:textColor="@color/colorText"
                 android:textSize="16sp" />
 
@@ -91,6 +93,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginRight="16dp"
             android:text="@string/label_for_you"
+            android:contentDescription="@string/untuk_anda"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -118,6 +121,7 @@
         android:text="@string/mulailah_mengevaluasi_nilai_matakuliah_perkuliahanmu_sekarang"
         android:textColor="@color/colorTextHeader"
         android:textSize="16sp"
+        android:contentDescription="@string/mulailah_mengevaluasi_nilai_matakuliah_perkuliahanmu_sekarangg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.67"
@@ -134,6 +138,7 @@
         android:layout_margin="16dp"
         android:background="@color/colorPrimary"
         android:text="@string/mulai_menghitung_nilai"
+        android:contentDescription="@string/mulai_menghitung_nilaii"
         android:textColor="@color/colorText"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
