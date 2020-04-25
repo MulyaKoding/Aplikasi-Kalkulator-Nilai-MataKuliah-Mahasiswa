@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import org.d3if4034.kalkulator_nilai_matakuliah.databinding.FragmentBaikBinding
-import org.d3if4034.kalkulator_nilai_matakuliah.databinding.FragmentSangatBaikBinding
+
 
 /**
  * A simple [Fragment] subclass.
